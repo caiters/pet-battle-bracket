@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <title>Pet Battle Bracket</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/petbattle.css" />
+</head>
+<body ng-app="bracket">
+  <h1>Pet Battle Bracket</h1>
+
+  <div ng-controller="BracketCtrl">
+    <div class="col-md-6">
+      <h2>Competitors</h2>
+      <ul class="competitors">
+        <li ng-repeat="competitor in competitors">
+          <h3>{{competitor.character}}</h3>
+          <ul>
+            <li ng-repeat="pet in competitor.pets">
+              {{ pet.name }}
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h2>The Bracket</h2>
+      <input type="text" ng-model="test" />
+      <p>Matches: {{ matches(test) }}</p>
+      <p>First Round: {{ firstRound(test) }}</p>
+      <p>Full Rounds: {{ fullRounds(test) }}</p>
+      <p>Total Rounds: {{ totalRounds(test) }}</p>
+      <div class="battle" ng-repeat="battle in battles">
+        <div ng-repeat="competitor in battle.competitors">
+          {{ competitor.character }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/controllers/bracket.ctrl.js"></script>
+</body>
+</html>
