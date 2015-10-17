@@ -210,15 +210,38 @@ angular.module('bracket')
           "family": "Beast",
         }
       ]
+    },
+    {
+      "character": "Daniellena",
+      "realm": "Bronzebeard",
+      "pets": [
+        {
+          "name": "Speedy",
+          "level": 25,
+          "family": "Aquatic",
+        },
+        {
+          "name": "Terrible Turnip",
+          "level": 25,
+          "family": "Elemental",
+        },
+        {
+          "name": "Black Tabby",
+          "level": 25,
+          "family": "Beast",
+        }
+      ]
     }
   ];
 
   $scope.test = 11;
 
+  // helper
   $scope.log2 = function(val){
     return Math.log(val) / Math.LN2;
   };
 
+  //
   $scope.matches = function(val){
     return Math.pow(2, Math.floor($scope.log2(val)));
   };

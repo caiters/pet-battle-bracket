@@ -1,2 +1,23 @@
+body {
+  font-family: 'futura-pt', sans-serif;
+  font-size: 16px;
+}
+.site-title {
+  font-family: "stenciletta-left", sans-serif;
+  position: relative;
+  color: #000;
+  font-size: 100px;
+  text-align: center;
+}
+.site-title:after {
+  content: 'Pet Battle Bracket';
+  font-family: "stenciletta-right", sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #333;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJwZXRiYXR0bGUubGVzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIiXSwiZmlsZSI6InBldGJhdHRsZS5jc3MiLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ== */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBldGJhdHRsZS5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQU8sYUFBYSx1QkFBYjtFQUFzQyxlQUFBOztBQUU3QztFQUFjLGFBQWEsOEJBQWI7RUFBNkMsa0JBQUE7RUFBb0IsV0FBQTtFQUFhLGdCQUFBO0VBQWtCLGtCQUFBOztBQUM1RyxXQUFDO0VBQVMsU0FBUyxvQkFBVDtFQUErQixhQUFhLCtCQUFiO0VBQThDLGtCQUFBO0VBQW9CLFNBQUE7RUFBVyxRQUFBO0VBQVUsV0FBQTtFQUFhLFdBQVcscUJBQVg7RUFBa0MsV0FBQSIsImZpbGUiOiJwZXRiYXR0bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbmJvZHkgeyBmb250LWZhbWlseTogJ2Z1dHVyYS1wdCcsIHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTogMTZweDsgfVxyXG5cclxuLnNpdGUtdGl0bGUgeyBmb250LWZhbWlseTogXCJzdGVuY2lsZXR0YS1sZWZ0XCIsIHNhbnMtc2VyaWY7IHBvc2l0aW9uOiByZWxhdGl2ZTsgY29sb3I6ICMwMDA7IGZvbnQtc2l6ZTogMTAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAmOmFmdGVyIHsgY29udGVudDogJ1BldCBCYXR0bGUgQnJhY2tldCc7IGZvbnQtZmFtaWx5OiBcInN0ZW5jaWxldHRhLXJpZ2h0XCIsIHNhbnMtc2VyaWY7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgbGVmdDogNTAlOyB0b3A6IDUwJTsgY29sb3I6ICMzMzM7IHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpOyB3aWR0aDogMTAwJTsgfVxyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ== */

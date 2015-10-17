@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="assets/petbattle.css" />
 </head>
 <body ng-app="bracket">
-  <h1>Pet Battle Bracket</h1>
+  <h1 class="site-title">Pet Battle Bracket</h1>
 
   <div ng-controller="BracketCtrl">
     <div class="col-md-6">
@@ -34,11 +34,84 @@
           {{ competitor.character }}
         </div>
       </div>
+      <div class="static-bracket">
+        <h3>Static Bracket</h3>
+
+        <div class="round">
+          <h4>Elimination Round</h4>
+          <ul>
+            <li>Kurai</li>
+          </ul>
+          <ul>
+            <li>Kairiel</li>
+          </ul>
+          <ul>
+            <li>Jordynna</li>
+          </ul>
+          <ul>
+            <li>Eliina</li>
+          </ul>
+          <ul>
+            <li>Daniellena</li>
+          </ul>
+          <ul>
+            <li>Aerfen</li>
+            <li>Allurien</li>
+          </ul>
+          <ul>
+            <li>Crunchyroll</li>
+            <li>Emacs</li>
+          </ul>
+          <ul>
+            <li>Sylphrena</li>
+            <li>Pinxy</li>
+          </ul>
+        </div>
+        <div class="round">
+          <h4>First Round</h4>
+          <ul>
+            <li>Kurai</li>
+            <li>Kairiel</li>
+          </ul>
+          <ul>
+            <li>Jordynna</li>
+            <li>Eliina</li>
+          </ul>
+          <ul>
+            <li>Daniellena</li>
+            <li>Allurien</li>
+          </ul>
+          <ul>
+            <li>Emacs</li>
+            <li>Sylphrena</li>
+          </ul>
+        </div>
+        <div class="round">
+          <h4>Second Round</h4>
+          <ul>
+            <li>Kurai</li>
+            <li>Eliina</li>
+          </ul>
+          <ul>
+            <li>Daniellena</li>
+            <li>Emacs</li>
+          </ul>
+        </div>
+        <div class="round">
+          <h4>Final Round</h4>
+          <ul>
+            <li>Kurai</li>
+            <li>Emacs</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
   <script src="app/app.js"></script>
   <script src="app/controllers/bracket.ctrl.js"></script>
+  <script src="https://use.typekit.net/txp6bif.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </body>
 </html>
