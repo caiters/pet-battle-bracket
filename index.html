@@ -9,6 +9,100 @@
   <h1 class="site-title">Pet Battle Bracket</h1>
 
   <div ng-controller="BracketCtrl">
+    <div class="container">
+      <h2>The Bracket</h2>
+      <input type="text" ng-model="test" />
+      <p>Matches: {{ matches(test) }}</p>
+      <p>First Round: {{ firstRound(test) }}</p>
+      <p>Full Rounds: {{ fullRounds(test) }}</p>
+      <p>Total Rounds: {{ totalRounds(test) }}</p>
+      <div class="" ng-repeat="battle in battles">
+        <div ng-repeat="competitor in battle.competitors">
+          {{ competitor.character }}
+        </div>
+      </div>
+      <div class="static-bracket row">
+        <h3>Static Bracket</h3>
+        <p>For HTML testing purposes</p>
+
+
+        <!--
+          Whole thing = Battle
+          Set of matches = Round
+          A single fight = Match
+
+        -->
+        <div class="battle row">
+          <div class="round col-md-3">
+            <h4 class="round-title">Elimination Round</h4>
+            <ul class="match match-by">
+              <li>Kurai</li>
+            </ul>
+            <ul class="match match-by">
+              <li>Kairiel</li>
+            </ul>
+            <ul class="match match-by">
+              <li>Jordynna</li>
+            </ul>
+            <ul class="match match-by">
+              <li>Eliina</li>
+            </ul>
+            <ul class="match match-by">
+              <li>Daniellena</li>
+            </ul>
+            <ul class="match match-vs">
+              <li class="match--loser">Aerfen</li>
+              <li>Allurien</li>
+            </ul>
+            <ul class="match match-vs">
+              <li class="match--loser">Crunchyroll</li>
+              <li>Emacs</li>
+            </ul>
+            <ul class="match match-vs">
+              <li>Sylphrena</li>
+              <li class="match--loser">Pinxy</li>
+            </ul>
+          </div>
+          <div class="round col-md-3">
+            <h4 class="round-title">First Round</h4>
+            <ul class="match match-vs">
+              <li>Kurai</li>
+              <li class="match--loser">Kairiel</li>
+            </ul>
+            <ul class="match match-vs">
+              <li class="match--loser">Jordynna</li>
+              <li>Eliina</li>
+            </ul>
+            <ul class="match match-vs">
+              <li>Daniellena</li>
+              <li class="match--loser">Allurien</li>
+            </ul>
+            <ul class="match match-vs">
+              <li>Emacs</li>
+              <li class="match--loser">Sylphrena</li>
+            </ul>
+          </div>
+          <div class="round col-md-3">
+            <h4 class="round-title">Second Round</h4>
+            <ul class="match match-vs">
+              <li>Kurai</li>
+              <li class="match--loser">Eliina</li>
+            </ul>
+            <ul class="match match-vs">
+              <li class="match--loser">Daniellena</li>
+              <li>Emacs</li>
+            </ul>
+          </div>
+          <div class="round col-md-3">
+            <h4 class="round-title">Final Round</h4>
+            <ul class="match match-vs">
+              <li class="match--loser">Kurai</li>
+              <li>Emacs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="col-md-6">
       <h2>Competitors</h2>
       <ul class="competitors">
@@ -21,90 +115,6 @@
           </ul>
         </li>
       </ul>
-    </div>
-    <div class="col-md-6">
-      <h2>The Bracket</h2>
-      <input type="text" ng-model="test" />
-      <p>Matches: {{ matches(test) }}</p>
-      <p>First Round: {{ firstRound(test) }}</p>
-      <p>Full Rounds: {{ fullRounds(test) }}</p>
-      <p>Total Rounds: {{ totalRounds(test) }}</p>
-      <div class="battle" ng-repeat="battle in battles">
-        <div ng-repeat="competitor in battle.competitors">
-          {{ competitor.character }}
-        </div>
-      </div>
-      <div class="static-bracket">
-        <h3>Static Bracket</h3>
-
-        <div class="round">
-          <h4>Elimination Round</h4>
-          <ul>
-            <li>Kurai</li>
-          </ul>
-          <ul>
-            <li>Kairiel</li>
-          </ul>
-          <ul>
-            <li>Jordynna</li>
-          </ul>
-          <ul>
-            <li>Eliina</li>
-          </ul>
-          <ul>
-            <li>Daniellena</li>
-          </ul>
-          <ul>
-            <li>Aerfen</li>
-            <li>Allurien</li>
-          </ul>
-          <ul>
-            <li>Crunchyroll</li>
-            <li>Emacs</li>
-          </ul>
-          <ul>
-            <li>Sylphrena</li>
-            <li>Pinxy</li>
-          </ul>
-        </div>
-        <div class="round">
-          <h4>First Round</h4>
-          <ul>
-            <li>Kurai</li>
-            <li>Kairiel</li>
-          </ul>
-          <ul>
-            <li>Jordynna</li>
-            <li>Eliina</li>
-          </ul>
-          <ul>
-            <li>Daniellena</li>
-            <li>Allurien</li>
-          </ul>
-          <ul>
-            <li>Emacs</li>
-            <li>Sylphrena</li>
-          </ul>
-        </div>
-        <div class="round">
-          <h4>Second Round</h4>
-          <ul>
-            <li>Kurai</li>
-            <li>Eliina</li>
-          </ul>
-          <ul>
-            <li>Daniellena</li>
-            <li>Emacs</li>
-          </ul>
-        </div>
-        <div class="round">
-          <h4>Final Round</h4>
-          <ul>
-            <li>Kurai</li>
-            <li>Emacs</li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
 

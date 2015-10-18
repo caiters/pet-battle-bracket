@@ -4,3 +4,12 @@ body { font-family: 'futura-pt', sans-serif; font-size: 16px; }
 .site-title { font-family: "stenciletta-left", sans-serif; position: relative; color: #000; font-size: 100px; text-align: center;
   &:after { content: 'Pet Battle Bracket'; font-family: "stenciletta-right", sans-serif; position: absolute; left: 50%; top: 50%; color: #333; transform: translate(-50%, -50%); width: 100%; }
 }
+
+.battle { display: flex; }
+
+.round { position: relative; padding-top: 2em; display: flex; justify-content: space-around; flex-direction: column; }
+.round-title { position: absolute; top: 0; left: 0; text-align: center; width: 100%; margin: 0; }
+
+.match { list-style: none outside; margin: 1em 0; padding: 0; border: 1px solid #666; }
+.match-by { border-color: #f0f0f0; }
+.match--loser { text-decoration: line-through; }
